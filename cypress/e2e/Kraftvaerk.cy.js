@@ -1,13 +1,14 @@
+import {GooglePage} from "../page-objects/googlePage"
+
+const googlePage = new GooglePage();
+
 context('Look for Kraftvaerk web page', () => {
     beforeEach(() => {
-        cy.visit('https://google.com.br')
+        cy.visit("https://google.com.br")
     })
-  
-    it('Search for Kraftvaerk', () => {
-        cy.get('.gLFyf.gsfi').type('Kraftvaerk')
-        .type('{enter}')
 
-        cy.get('#rso > div:nth-child(1) > div > div > div > div > div > div.yuRUbf > a').should('have.attr', 'href')
-        .should('eq', 'https://kraftvaerk.com/')
+    it("Look for kraftvaerk on google and assert the url", ()=> {
+      googlePage.lookForUrl("kraftvaerk")
+      googlePage.checkUrl("https://kraftvaerk.com/")
     })
 })
