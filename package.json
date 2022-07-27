@@ -1,0 +1,22 @@
+{
+  "name": "test-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeAOliveira/test-cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeAOliveira/test-cypress/issues"
+  },
+  "homepage": "https://github.com/GuilhermeAOliveira/test-cypress#readme",
+  "devDependencies": {
+    "cypress": "^10.3.1"
+  }
+}
